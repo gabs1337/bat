@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+
+    <title>Web Portal BAT </title> 
+</head>
+<body>
+    <div class="container">
+        <header>Portal Web - BAT</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">(Tela 1 Recepção)Inserir número de série</span>
+                    <div class="input-field">
+                        <label>Leia o Qrcode/Código de barras ou insira o número de série</label>
+                        <input type="text" placeholder="123456789">
+                        <i class="fas fa-qrcode"></i>
+                        <i class="fas fa-barcode"></i>
+                    </div>
+                    <span>-----------------------------------------------------------------------------------------------------------------------------</span>
+                    <span class="title"> (Tela 2 Recepção)Retorno dos Dados do Produto</span>
+                    <div class="fields"></div>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>N° Série Unidade Condensadora</label>
+                            <input type="text" placeholder="123456789">
+                        </div>
+
+                        <div class="input-field">
+                            <label>N° Série Compressor</label>
+                            <input type="text" placeholder="123456781">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Modelo</label>
+                            <input type="text" placeholder="Coldstorage">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Descrição Modelo</label>
+                            <input type="text" placeholder="Câmareta">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Data de fabricação</label>
+                            <input type="text" placeholder="04/03/2024">
+                        </div>
+                        
+
+                        <div class="input-field">
+                            <label>Revendedor CNPJ/CPF</label>
+                            <input type="text" placeholder="00299356280">
+                        </div>
+                        <div class="input-field">
+                            <label>Número da Nota Fiscal de Venda</label>
+                            <input type="text" placeholder="999.999.888.77">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Data Venda</label>
+                            <input type="number" placeholder="03/06/2023">
+                        </div>
+                        <div class="input-field">
+                            <label>Razão social *obrigatorio</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-field">
+                            <label>Defeito apresentado *obrigatorio</label>
+                            <input type="text" placeholder="">
+                        </div>
+                        <div class="input-field">
+                            <label>Item solicitado para garantia *obrigatorio</label>
+                            <select required>
+                                <option disabled selected>Selecione o 1° Item </option>
+                                <option>Compressor </option>
+                                <option>Filtro</option>
+                                <option>Condensadora</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>2° Item solicitado para garantia *obrigatorio</label>
+                            <select required>
+                                <option disabled selected>Selecione o 2° Item</option>
+                                <option>Compressor </option>
+                                <option>Filtro</option>
+                                <option>Condensadora</option>
+                            </select>
+                        </div>
+                        <button class="nextBtn">
+                            <span class="btnText">Finalizar 2° Etapa</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                        <span>-----------------------------------------------------------------------------------------------------------------------------</span>
+
+                        
+                        
+                </div>
+
+                <div class="details ID">
+                    <span class="title">(Tela 3 Técnico)Inserir número de série</span>
+                    <div class="input-field">
+                        <label>Leia o Qrcode/Código de barras ou insira o número de série</label>
+                        <input type="text" placeholder="123456789">
+                        <i class="fas fa-qrcode"></i>
+                        <i class="fas fa-barcode"></i>
+                    </div>
+                    <span class="title"> Retorno dos dados do Produto e BAT</span>
+                    <div class="input-field">
+                        <label>Número BAT</label>
+                        <input type="text" placeholder="00001">
+                    </div>
+                    <div class="input-field">
+                        <label>Defeito ___ </label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="input-field">
+                        <label>Item Analise</label>
+                        <input type="text" placeholder="Condensadora">
+                    </div>
+                    <div class="fields">
+                        
+                <div class="input-field">
+                    <label>Grupo</label>
+                    <select required>
+                        <option disabled selected>Selecione o Grupo</option>
+                        <option>1 RUÍDO</option>
+                        <option>2 FALHA</option>
+                        <option>3 QUEBRADO</option>
+                    </select>
+                </div>
+                <div class="input-field">
+                    <label>Causa</label>
+                    <select required>
+                        <option disabled selected>Selecione a Causa</option>
+                        <option>100 Descrição: Tubo Descarga Batendo</option>
+                        <option>200 Descrição: Cubo do Suporte sem Chanfro</option>
+                        <option>300 Tubo Desc. Solto</option>
+                    </select>
+                </div>
+                
+                <div class="input-field">
+                    <label>Analise</label>
+                    <input type="text" placeholder="Falha de transporte / Erro nas operações de carga do Produto">
+                </div>
+                <div class="input-field">
+                    <label>Comentário</label>
+                    <input type="text" placeholder="Inserir Comentário">
+                </div>
+                <div class="input-field">
+                    <label>It Produto 1 - Amp </label>
+                    <input type="text" placeholder="1.5">
+                </div>
+                <div class="input-field">
+                    <label>It Produto 1- Watt </label>
+                    <input type="text" placeholder="10.5">
+                </div>
+                <div class="input-field">
+                    <label>It Produto 1 - CA </label>
+                    <input type="text" placeholder="250">
+                </div>
+                <div class="input-field">
+                    <label>It Produto 1 - AM </label>
+                    <input type="text" placeholder="5.0">
+                </div>
+                <div class="input-field">
+                    <label>It Produto 1 - AM </label>
+                    <input type="text" placeholder="5.0">
+                </div>
+                <div class="input-field">
+                    <label>It Produto 1 - TC </label>
+                    <input type="text" placeholder="7.4">
+                </div>
+                <div class="input-field">
+                    <label>It Produto 1 - TR </label>
+                    <input type="text" placeholder="5.0">
+                </div>
+                <div class="input-field">
+                    <label>It Produto 1 - Gr </label>
+                    <input type="text" placeholder="4">
+                </div>
+                    <button class="nextBtn">
+                        <span class="btnText">Finalizar 3° Etapa</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+</body>
+</html>
